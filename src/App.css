@@ -1,0 +1,101 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background-image: url("/public/manuel-venturini-TBmHA1LOuZU-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    background-color: rgba(6, 141, 252, 0.288);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.header,
+.card__footer {
+    grid-column: span 2;
+
+}
+
+.card__title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+
+.card__subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+
+}
+
+.card__temp {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.card__info {
+    padding-top: 20px;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2rem;
+
+}
+
+
+
+.card__description {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+
+
+}
+
+.card__item {
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+span {
+    font-size: 1.2rem;
+}
+
+.card__btn {
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(59, 95, 255);
+    color: aliceblue;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.164);
+    transition: transform 100ms ease;
+}
+
+.card__btn:active {
+    transform: scale(1);
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.589);
+}
